@@ -1,0 +1,146 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <title>
+    Box Model
+  </title>
+  <style>
+
+    /* Note to self: this is the code for box model */
+    /* class:   */
+   /* id :unique identifying name for a tag- happend only once in the document- one id per tag is allowed */
+   /* a: the anchor tag links different documents together */
+
+
+   .fancy {
+     font-style: italic;
+     font-size: 20px;
+     text-decoration: underline;
+     color: pink;
+     background-color: black;
+   }
+
+
+
+    .circle{
+      width:100px;
+      height: 100px;
+      border-radius: 50%;
+      background-color: red;
+}
+
+    .box {
+    	width: 200px;
+    	 /*height 200px; */
+    	padding: 30px;
+    	margin: 20px;
+    	border: 3px solid #000;
+    	background-color: #ccc;
+}
+
+.placement {
+	height: 200px;
+	position: relative;
+	top:50px;
+	left: 200px;
+	z-index: 100; /* Note to self: arrange placements of the box :which layer it is in  */
+	              /*but don't use too often, you can always arrange placements by moving the box before or after one another */
+}
+
+.absolute{
+	height: 100px;
+	background-color: red;
+	position: absolute;
+	top:20px;
+	right: 0px;
+	margin-right: 0; /* Note to self: so that the box will be at the very left, without any space @the very right side of the space */
+}
+
+.fix{
+	height: 50px;
+	background-color: blue;
+	position: fixed;
+	bottom:0;
+	left: 300px;
+	margin:0;
+}
+.centered{
+	background-color: orange;
+	margin: 0 auto;  /* Note to self: margin: 0auto is for center things- reacts to whatever screen size; */
+}
+
+#highlight {
+  background-color: green;
+  border: 10px dotted red;
+  height: 100px;
+
+}
+
+/* Note- a: the anchor tag links different documents together ie: links to other website*/
+
+/*a:visited {
+  color: #000;
+}*/
+a {
+  color: red;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+  </style>
+
+
+
+
+</head>
+
+<body>
+
+  <div class="circle">
+
+  </div>
+
+
+
+
+
+<div class="box centered">
+
+</div>
+
+
+<div class="box absolute">
+
+</div>
+
+
+<div id="highlight" class="circle absolute" >
+
+</div>
+
+
+<div class="box placement">
+
+</div>
+
+
+<div class="box">
+ The New Typography [1923] – Laszlo Moholy-Nagy
+
+Typography is a tool of communication. It must be communication in its most intense form. <span class="fancy">The emphasis </span>must be on absolute clarity since this distinguishes the character of our own writing from that of ancient pictographic forms. Our intellectual relationship to the world is individual-exact (e.g.,this individual-exact relationship is in a state of transition toward a collective-exact orientation). This is in contrast to the ancient individual-amorphous and later collective- amorphous mode of communication. Therefore priority: unequivocal clarity in all typographical compositions. Legibility-communication must never be impaired by an a priori aesthetics.
+<a href="http://www.cca.edu">Just adding the link</a>
+
+
+
+</div>
+
+<div class="box fix">
+
+</div>
+</body>
+</html>
