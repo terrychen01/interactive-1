@@ -1,0 +1,152 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i" rel="stylesheet">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<title>
+		Exercise 2 - Card
+	</title>
+	<style>
+
+		body {
+		  font-family: 'Noto Sans', sans-serif;
+		}
+
+		.card {
+			transition: all 0.5s ease;
+			text-align: center;
+			width: 200px;
+			height: 350px;
+			border:1px solid #EEE;
+			margin: 50px auto;
+			background-color: #333;
+			font-size: 12px;
+			color: #CCC;
+		}
+
+		.logo {
+			padding: 30px 0 0;
+		}
+
+		.logo img {
+			vertical-align: middle;
+			width: 60px;
+			border-radius: 50%;
+			border:1px solid #EEE;
+			position: relative;
+			top:-3px;
+		}
+
+		.content {
+			height: 100%;
+			position: relative;
+		}
+
+		.name {
+			color: #EEE;
+			font-size: 16px;
+			font-weight: 700;
+			padding: 5px 0 0;
+			line-height: 1.0em;
+		}
+
+		.contact {
+			padding: 20px 0;
+			position: absolute;
+			bottom: 0;
+			width: 100%;
+		}
+
+		.bio {
+			display: none; /*this hides the elements*/
+		}
+
+		@media screen and (min-width: 768px) {
+      .card {
+				text-align: left;
+				width: 700px;
+				height: 350px;
+				background-color: #3587a0;
+				color: #000;
+			}
+			.name{
+				color: #000;
+				font-size: 28px;
+				font-weight: 700;
+			}
+
+			.logo{
+				float:left;
+				padding: 20px;
+			}
+			.text{
+				float: left;
+				padding: 20px 5px;
+			}
+			.contact {
+				font-size: 20px;
+				padding-left: 180px;
+				bottom: 20px;
+				width: 50%;
+			}
+			.bio {
+				display: none; /*this hides the elements*/
+			}
+
+		@media screen and (min-width: 1200px) {
+
+			.card{
+				background-color: #FFCD55;
+				transform: rotate(3deg);
+			}
+
+			.bio {
+				display: block; /*this shows the elements*/
+				float: right;
+				width: 25%;
+				font-style: italic;
+				padding: 10px;
+
+			}
+
+				}
+
+}
+
+
+
+	</style>
+</head>
+
+<body>
+
+	<div class="card">
+		<div class="content">
+
+			<div class="logo">
+				<img src="logo-mark.jpg" />
+			</div>
+
+			<div class="text">
+
+				<div class="name">Terry</div>
+				<div class="title">Designer</div>
+
+			</div>
+
+			<div class="contact">
+				terrychen@cca.edu<br />
+				555-555-5555<br />
+				San Francisco, CA
+			</div>
+      <div class="bio">
+				Typography is a tool of communication. It must be communication in its most intense form. The emphasis must be on absolute clarity since this distinguishes the character of our own writing from that of ancient pictographic forms. Our intellectual relationship to the world is individual-exact (e.g.,this individual-exact relationship is in a state of transition toward a collective-exact orientation).
+
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
