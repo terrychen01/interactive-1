@@ -1,0 +1,312 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+  <title>
+    <!-- add your title here -->
+  </title>
+  <style>
+
+  .returnevolution{
+    opacity: 0;
+    position: absolute;
+      top: 289px;
+      left: 381px;
+  }
+  .returntoxin{
+    opacity: 0;
+    position: absolute;
+  top: 224px;
+  left: 496px;
+  }
+
+  .returnclimatechange{
+    opacity: 0;
+    position: absolute;
+  top: 289px;
+  left: 609px;
+  }
+
+
+.evolution{
+  cursor: pointer;
+  position: absolute;
+    top: 289px;
+    left: 381px;
+}
+.toxin{
+  cursor: pointer;
+  position: absolute;
+top: 224px;
+left: 496px;
+}
+
+.climatechange{
+  cursor: pointer;
+  position: absolute;
+top: 289px;
+left: 609px;
+}
+
+.veges{
+  cursor: pointer;
+  position: absolute;
+  top: 157px;
+  left: 381px;
+}
+.dairy{
+  cursor: pointer;
+  position: absolute;
+top: 157px;
+left: 609px;
+}
+.cotton{
+  cursor: pointer;
+  position: absolute;
+  top: 355px;
+  left: 496px;
+}
+
+
+
+.textevo{
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 338px;
+  left: 52px;
+}
+
+.texttoxin{
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: 11px;
+  left: 729px;
+}
+
+.textcli{
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 338px;
+  left: 1083px;
+}
+
+.textdairy{
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 11px;
+  left: 1083px;
+}
+.textveges{
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
+  top: 11px;
+  left: 52px;
+}
+
+.textcot{
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 338px;
+  left: 729px;
+}
+
+
+
+.show{
+  animation: slide-reveal 2s forwards;
+}
+.hide{
+  animation: hide 2s
+}
+
+.bee1{
+  animation:bee1 6s  infinite;
+  position: absolute;
+  left: 500px;
+}
+
+.bee2{
+  animation: r 8s  infinite;
+  position: absolute;
+  right: -400px;
+  top: 250px;
+}
+
+@keyframes bee1{
+from {
+  left: -900px;
+}
+to{
+  left:2000px;
+}
+
+
+@keyframes r{
+  from {
+    right: -400px;
+  }
+  to {
+    right: 700px;
+  }
+}
+
+}
+
+
+
+@keyframes slide-reveal {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to{
+    opacity: 0;
+  }
+
+}
+
+  </style>
+
+  <script>
+
+
+   	$(document).ready(function() {
+
+		/* click on upright, show the big hexagon */
+
+    $(".evolution").click(function(){
+      $(this).hide();
+      $(".textevo").addClass('show');
+    });
+    $(".textevo").click(function(){
+      $(this).hide();
+      $(".textevo").addClass('hide');
+    });
+    $(".textevo").click(function(){
+      $(this).hide();
+      $(".returnevolution").addClass('show');
+    });
+
+
+
+        $(".toxin").click(function(){
+          $(this).hide();
+          $(".texttoxin").addClass('show');
+        });
+        $(".texttoxin").click(function(){
+          $(this).hide();
+          $(".texttoxin").addClass('hide');
+        });
+        $(".texttoxin").click(function(){
+            $(this).hide();
+            $(".returntoxin").addClass('show');
+          });
+
+
+        $(".climatechange").click(function(){
+          $(this).hide();
+          $(".textcli").addClass('show');
+        });
+        $(".textcli").click(function(){
+          $(this).hide();
+          $(".textcli").addClass('hide');
+        });
+        $(".textcli").click(function(){
+          $(this).hide();
+          $(".returnclimatechange").addClass('show');
+        });
+
+        $(".veges").click(function(){
+          $(this).hide();
+          $(".textveges").addClass('show');
+        });
+        $(".textveges").click(function(){
+          $(this).hide();
+          $(".textveges").addClass('hide');
+        });
+
+        $(".cotton").click(function(){
+          $(this).hide();
+          $(".textcot").addClass('show');
+        });
+        $(".textcot").click(function(){
+          $(this).hide();
+          $(".textcot").addClass('hide');
+        });
+
+        $(".dairy").click(function(){
+          $(this).hide();
+          $(".textdairy").addClass('show');
+        });
+        $(".textdairy").click(function(){
+          $(this).hide();
+          $(".textdairy").addClass('hide');
+        });
+
+
+
+
+      	/*  $(".hexagon1").click(function(){
+          $(this).hide();
+          $(".big.b1r").addClass('show');
+        });
+        $(".big.b1r").click(function(){
+          $(this).hide();
+          $(".hexagon1.right").show();
+          $(".big.b1r").addClass('hide');
+          $(".hexagon1.right").removeClass('hexagon1');
+        });
+*/
+
+
+
+});
+  </script>
+</head>
+
+<body>
+  <div class="returnevolution"> <img src= "imgofevolution.png"></div>
+  <div class="returntoxin"> <img src= "imgoftoxin.png"></div>
+  <div class="returnclimatechange"> <img src= "imgofclimatechange.png"></div>
+
+<div class="evolution"> <img src= "imgofevolution.png"></div>
+<div class="toxin"> <img src= "imgoftoxin.png"></div>
+<div class="climatechange"> <img src= "imgofclimatechange.png"></div>
+<div class="veges"><img src= "imgofveges.png"></div>
+<div class="cotton"><img src= "imgofcotton.png"></div>
+<div class="dairy"><img src= "imgofdairyproducts.png"></div>
+
+<div class="textevo"> <img src = "textofevolution.png"> </div>
+<div class="texttoxin"> <img src = "textoftoxin.png"> </div>
+<div class="textcli"> <img src = "textofclimatechange.png"> </div>
+
+<div class="textdairy"> <img src = "textofdairyproducts.png"></div>
+<div class="textveges"> <img src = "textofveges.png"> </div>
+<div class="textcot"> <img src="textofcotton.png"> </div>
+
+
+<div class="bee1"> <img src="bee.png"></div>
+<div class="bee2"> <img src="bee2.png"></div>
+
+  <!-- start your code here -->
+
+  <!-- start your code here -->
+
+</body>
+</html>
