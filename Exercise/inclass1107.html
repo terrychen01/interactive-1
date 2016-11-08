@@ -1,0 +1,119 @@
+<!doctype html>
+
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>
+    In-Class Challenge 11/7
+  </title>
+  <style>
+
+
+    .quote {
+    	margin: 10%;
+    }
+
+
+    .quote p {
+    	font-size: 1.5em;
+    	line-height: 1.5em;
+    }
+button {
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+.colorchange{
+  color: red;
+  background-color: yellow;
+
+}
+
+.italic{
+  text-decoration: underline;
+  font-style:italic;
+}
+
+.white{
+  color: white;
+}
+
+.black{
+  background-color: black;
+}
+
+  </style>
+
+
+  <script>
+    $(document).ready(function(){
+
+    $("#switch").click(function(){
+      $(".everyone").toggleClass('red');
+    });
+
+    $("#highlight").click(function(){
+      $(".anotherchance").toggleClass('colorchange');
+    });
+
+    $("#underline").click(function(){
+      $(".waiting").toggleClass('italic');
+    });
+
+    $("#blackout").click(function(){
+      $(".no").toggleClass('white');
+      $("body").toggleClass('black');
+    });
+
+    });
+
+  </script>
+</head>
+
+
+<body>
+
+<button id="highlight">highlight</button>
+<button id="underline">waiting</button>
+<button id="blackout">No!</button>
+
+
+  <div class=”quote”>
+
+
+	<p>
+		<span class="waiting">Waiting</span> for a train to go<br />
+		or a bus to come, or a plane to go<br />
+		or the mail to come, or the rain to go<br />
+		or the phone to ring, or the snow to snow<br />
+		or the <span class="waiting">waiting</span> around for a Yes or <span class="no">No</span><br />
+		or <span class="waiting">waiting</span> for their hair to grow.<br />
+		<span class="everyone">Everyone</span> is just <span class="waiting">waiting</span>.<br />
+	</p>
+
+
+	<p>
+		<span class="waiting">Waiting</span> for the fish to bite<br />
+		or <span class="waiting">waiting</span> for the wind to fly a kite<br />
+		or <span class="waiting">waiting</span> around for Friday night<br />
+		or <span class="waiting">waiting</span>, perhaps, for their Uncle Jake<br />
+		or a pot to boil, or a Better Break<br />
+		or a string of pearls, or a pair of pants<br />
+		or a wig with curls, or <span class="anotherchance">Another Chance</span>.<br />
+		Everyone is just <span class="waiting">waiting</span>.<br />
+	</p>
+
+
+	<p>
+		<span class="no">NO!</span><br />
+		That's not for you!
+	</p>
+
+
+  </div>
+
+
+</body>
+</html>
