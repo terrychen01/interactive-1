@@ -1,0 +1,107 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>
+    Exercise 5
+  </title>
+  <style>
+  body {
+    margin: 0;
+  }
+
+  button {
+    padding: 5px;
+    margin: 5px;
+    font-size: 1.0em;
+    cursor: pointer;
+  }
+
+  .nav {
+    position: fixed;
+    top:100px;
+    left:0;
+    background-color: #FFF;
+    padding: 15px;
+  }
+
+	.box {
+    height:1200px;
+    background-size: cover;
+    background-position: center;
+  }
+  .p1{background-image: url('p1.jpg')}
+  .p2{background-image: url('p2.jpg')}
+  .p3{background-image: url('p3.jpg')}
+  .p4{background-image: url('p4.jpg')}
+  .p5{background-image: url('p5.jpg')}
+  </style>
+
+  <script>
+
+$(document).ready(function(){
+  $("#btn-p1").click(function() {
+       $('html, body').animate({
+           scrollTop: $(".p1").offset().top
+       }, 1000);
+   });
+
+   $("#btn-p2").click(function() {
+       $('html, body').animate({
+           scrollTop: $(".p2").offset().top
+       }, 1000);
+   });
+
+   $("#btn-p3").click(function() {
+       $('html, body').animate({
+           scrollTop: $(".p3").offset().top
+       }, 1000);
+   });
+
+   $("#btn-p4").click(function() {
+       $('html, body').animate({
+           scrollTop: $(".p4").offset().top
+       }, 1000);
+   });
+
+   $("#btn-p5").click(function() {
+       $('html, body').animate({
+           scrollTop: $(".p5").offset().top
+       }, 1000);
+   });
+
+   console.log( $(".p5").offset() );
+
+});
+
+
+  </script>
+</head>
+
+<body>
+<div class="nav">
+  <button id= "btn-p1">pic1</button> <br/>
+  <button id= "btn-p2">pic2</button> <br/>
+  <button id= "btn-p3">pic3</button> <br/>
+  <button id= "btn-p4">pic4</button> <br/>
+  <button id= "btn-p5">pic5</button> <br/>
+
+</div>
+
+
+<div class="box p1">
+</div>
+<div class="box p2">
+</div>
+<div class="box p3">
+</div>
+<div class="box p4">
+</div>
+<div class="box p5">
+</div>
+
+
+
+</body>
+</html>
