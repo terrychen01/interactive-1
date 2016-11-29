@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua:300,400,500,600,700,800,900" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <title>
+    1123sketch
+  </title>
+  <style>
+	  body{
+        height: 420px;
+        width: 10107px;
+        font-family: 'Inknut Antiqua', serif;
+        background-color: #d7dde3;
+        background-image: url('worldimg3.gif');
+        background-repeat: repeat-x;
+	  }
+
+    .box1{
+      padding: 5px;
+      background-color: #d4d4d4;
+      position: absolute;
+      width: auto;
+    }
+
+    .box1 .gif {
+      display: none;
+      list-style: none;
+    }
+
+    .box1 .list{
+      display: none;
+      list-style: none;
+    }
+
+    span {
+      margin: 30px;
+      font-weight: 600;
+      font-size: 10px;
+      color: #666;
+      display: inline-block;
+    }
+
+
+    .nov1sf {
+    left: 146px;
+    top:200px;
+  }
+
+    .nov1ox{
+      left: 608px;
+      top:121px;
+    }
+
+    .nov1tw{
+      left: 1203px;
+      top:268px;
+    }
+
+    .nov2sf{
+      width:100px;
+      left: 1600px;
+      top:200px;
+    }
+    .nov2ox{
+      left: 2100px;
+      top:121px;
+    }
+
+
+
+  </style>
+
+  <script>
+  $(document).ready(function(){
+
+    $(".box1").click(function(){
+      $(".gif", this).toggle();
+    });
+    $(".box1").click(function(){
+      $(".list", this).toggle();
+    });
+  	});
+
+  </script>
+</head>
+
+<body>
+  November 1st
+  <span class="box1 nov1sf">ME @ SF
+    <div class="gif">
+    so no class today
+<iframe src="https://giphy.com/embed/l0MYxzozahLP6uIkE" width="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+    </div>
+  </span>
+
+  <span class="box1 nov1ox"> SIS @ Oxford
+    <div class="list">
+    <ul> how to cook curry? </ul>
+    </div>
+  </span>
+
+  <span class="box1 nov1tw">
+     Leon @ TPI
+     <div class="gif">
+       you CANNOT believe what just happened
+     <iframe src="https://giphy.com/embed/3oz8xyJtY5oZBWHpny" width="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+
+      </div>
+   </span>
+
+
+   <span class="box1 nov2sf"> ME @ SF
+     <div class="list">
+     <ul> class starts at 8   </ul>
+     </div>
+   </span>
+
+   <span class="box1 nov2ox"> SIS @ Oxford
+     <div class="list">
+     <ul> so I called mom yesterday  </ul>
+     </div>
+   </span>
+
+</body>
+</html>
