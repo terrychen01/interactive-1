@@ -29,24 +29,25 @@
   	$(document).ready(function(){
 
   		$("#play-vid").click(function(){
-        $(this).hide();
-        $("#pause-vid").show();
+
+  			$(this).hide();
+  			$("#pause-vid").show();
   			$("#bart")[0].play();
 
   		});
 
   		$("#pause-vid").click(function(){
-        $(this).hide();
-        $("#play-vid").show();
+
+  			$(this).hide();
+  			$("#play-vid").show();
   			$("#bart")[0].pause();
+
   		});
 
-    $("#bart").on('ended', function(){
-    $("#play-vid").show();
-    $("#pause-vid").hide();
-
-    });
-
+  		$("#bart").on('ended',function(){
+  			$("#play-vid").show();
+  			$("#pause-vid").hide();
+    	});
 
   	});
 
@@ -61,15 +62,20 @@
 
 		<br />
 		<br />
-    <video id="bart" width="360" height="640">
-      <source src="bart.mp4" type="video/mp4">
-    </video>
 
+		<video id="bart" width="360" height="640">
+		  <source src="bart.mp4" type="video/mp4">
+		</video>
+	</p>
 
-    <br />
-    <br />
+	<video id="bike" width="640" height="360" autoplay controls loop>
+	  <source src="bike.mp4" type="video/mp4">
+	</video>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/XRaq9hY16rk" frameborder="0" allowfullscreen></iframe>
-    
+	<br />
+	<br />
+
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/XRaq9hY16rk" frameborder="0" allowfullscreen></iframe>
+
 </body>
 </html>
