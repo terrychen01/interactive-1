@@ -1,0 +1,882 @@
+
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:400,400i,600,600i" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Add jQuery library -->
+  <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+  <!-- Add fancyBox -->
+  <link rel="stylesheet" href="/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+  <script type="text/javascript" src="fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  <title>
+    project3
+  </title>
+  <style>
+
+  .headline{
+        padding:5px;
+				font-family: ;
+				font-weight: ;
+				font-size: ;
+				text-shadow: ;
+				text-align: center;
+				text-transform: capitalize;
+        background-color: #3A3933;
+        position:fixed;
+				width: 1400px;
+				}
+
+
+        a{
+          margin: 50px;
+          font-weight: ;
+          color: white;
+          text-decoration: none;
+        }
+
+        a:hover{
+          background-color: #CCC9B8
+        }
+
+	  body{
+        height: 420px;
+        width: 10143px;
+        font-family: 'Josefin Sans', sans-serif;
+        background-color: #d7dde3;
+        background-image: url('worldimg_idl.png');
+        background-repeat: repeat-x;
+	  }
+
+    #nov1 {
+       position: relative;
+       float: left;
+       width: 1449px;
+       height: 10px;
+    }
+
+    #nov2 {
+      position: relative;
+      float: left;
+      width: 1449px;
+      height: 10px;"
+    }
+
+    #nov3 {
+      position: relative;
+      float: left;
+      width: 1449px;
+      height: 10px;"
+    }
+
+    #nov4 {
+      position: relative;
+      float: left;
+      width: 1449px;
+      height: 10px;"
+    }
+
+    #nov5 {
+      position: relative;
+      float: left;
+      width: 1449px;
+      height: 10px;"
+    }
+
+    #nov6 {
+      position: relative;
+      float: left;
+      width: 1449px;
+      height: 10px;"
+    }
+
+    #nov7 {
+      position: relative;
+      float: left;
+      width: 1449px;
+      height: 10px;"
+    }
+
+    .box1{
+      cursor: pointer;
+      background-color: #d4d4d4;
+      padding:5px;
+      position: absolute;
+      width: auto;
+    }
+
+    .box1 .gif {
+      padding:5px;
+      display: none;
+      list-style: none;
+    }
+
+    .box1 .list{
+      display: none;
+      padding:5px;
+      list-style: none;
+    }
+    .box1 .list2{
+      display: none;
+      padding:5px;
+      list-style: none;
+      background-color: #d3d0c6;
+    }
+
+
+    span {
+      width: 150px;
+      margin: 30px;
+      font-weight: 600;
+      font-size: 10px;
+      color: #666;
+      display: inline-block;
+    }
+
+.a{
+  padding:5px;
+  background-color: #e9e8e3;
+  }
+
+.b{
+  padding:5px;
+  }
+
+  #player{
+    width: 90px;
+    }
+
+
+
+ .sf {
+    width: 150px;
+    left: 146px;
+    top:200px;
+  }
+
+ .ox{
+      width: 150px;
+      left: 608px;
+      top:121px;
+    }
+
+ .tw{
+      width: 150px;
+      left: 1000px;
+      top: 210px;
+    }
+ .tw2{
+      width: 150px;
+      left: 1174px;
+      top: 210px;
+    }
+
+ .tw3{
+      width: 150px;
+      left: 1174px;
+      top: 352px;
+    }
+ .tw4{
+   width: 150px;
+   left: 1174px;
+   top: 452px;
+ }
+.dubai{
+  width: 150px;
+  left: 800px;
+  top: 233px;
+}
+
+.nz{
+  width: 150px;
+  left: 1200px;
+  top: 453px;
+}
+
+
+  </style>
+
+  <script>
+
+
+
+  $(document).ready(function(){
+
+    $(".video").fancybox({
+  		maxWidth	: 800,
+  		maxHeight	: 600,
+  		fitToView	: false,
+  		width		: '70%',
+  		height		: '70%',
+  		autoSize	: false,
+  		closeClick	: false,
+  		openEffect	: 'none',
+  		closeEffect	: 'none'
+    });
+
+
+    $(".box1").click(function(){
+      $(".gif", this).toggle();
+      });
+    $(".box1").click(function(){
+        $(".list", this).toggle();
+      });
+
+
+   $("#single_2").fancybox({
+     openEffect	: 'elastic',
+     closeEffect	: 'elastic',
+
+     helpers : {
+       title : {
+         type : 'inside'
+       }
+     }
+   });
+
+
+   $(".fancybox-button").fancybox({
+   		prevEffect		: 'none',
+   		nextEffect		: 'none',
+   		closeBtn		: false,
+   		helpers		: {
+   			title	: { type : 'inside' },
+   			buttons	: {}
+   		}
+   	});
+
+
+
+
+  	});
+  </script>
+</head>
+
+
+<body>
+  <div class="headline month">
+<a href="#html"> OCT</a>
+<a href="#html"> NOV</a>
+<a href="#html"> DEC</a>
+2017
+<a href="#html"> JAN</a>
+  </div>
+<br><br>
+  <div class="headline day">
+<a href="#nov1"> 01</a>
+<a href="#nov2"> 02</a>
+<a href="#nov3"> 03</a>
+<a href="#nov4"> 04</a>
+<a href="#nov5"> 05</a>
+<a href="#nov6"> 06</a>
+<a href="#nov7"> 07</a>
+  </div>
+
+
+<div id="nov1">
+
+    <span class="box1 sf"> ME @ SF
+      <div class="list">
+
+        <div class="message a">
+         1.so no class today
+        </div>
+        <div class="gif">
+          <iframe src="https://giphy.com/embed/l0MYxzozahLP6uIkE" width="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        <div class="message a">
+         2.WHAT SHOULD I DO FOR BRIAN?!!!!
+        </div>
+        <div class="message b">
+         3.I have burger today~
+        </div>
+        <div class="message a">
+         4.okay, I will try to skype mom this week
+        </div>
+        <div class="message b">
+         5.I have burger today~
+        </div>
+        <div class="message a">
+         6.I want to see movie
+        </div>
+
+     </div>
+    </span>
+
+    <span class="box1 ox"> SIS @ Oxford
+      <div class="list">
+        <div class="message a">
+         how to cook curry?
+         <br>
+        </div>
+        <div class="message b">
+         You going?????????????
+         <a class="video fancybox.iframe" href="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fsfsymphony%2Fvideos%2F10154272303368292%2F&show_text=0&width=560" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"><img src="sfs.png" width="90px"></a>
+
+        </div>
+        <div class="message a">
+          Tell me WHAT to DO!!!! Should I wait 4 hours in line just to see if I get the chance to sneak into Steven Hawking’s lecture? It was already full so I couldn’t sign up, but they say there are going to be extra seats on the day first come first serve. Should I go???
+        </div>
+        <div class="message b">
+         You're god! You brighten my path
+        </div>
+
+      </div>
+    </span>
+
+    <span class="box1 tw">
+       Leon @ Taipei
+       <div class="list">
+        <div class="message a">
+        <div class="gif">
+        you CANNOT believe what just happened
+        <iframe src="https://giphy.com/embed/3oz8xyJtY5oZBWHpny" width="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        <audio id="player" controls>
+          <source src="major_majority.aac" type="audio/aac">
+        </audio>
+      </div>
+
+     </div>
+     </span>
+
+    <span class="box1 tw2">
+        neil @ Taichung
+        <div class="list">
+          <div class="message a">
+        this is you:
+        <a id="single_2" href="thisisyou.png" title="This is you">
+	       <img src="thisisyou.png" width="80px" alt="">
+        </a>
+
+        </div>
+      </div>
+
+    </span>
+
+    <span class="box1 tw3">
+         mom @ TW
+         <div class="list">
+           <div class="message a">
+           how are you? <br> have you eat yet?<br>remember to give me a call.
+           <a id="single_2" href="rip.png" title="My mom doesn't know what 'rest in peace' means exactly">
+   	       <img src="rip.png" width="80px" alt="">
+           </a>
+
+         </div>
+       </div>
+    </span>
+</div>
+
+ <div id="nov2" >
+
+    <span class="box1 sf"> ME @ SF
+      <div class="list">
+
+        <div class="message a">
+         1.BUSTED - so embarrassing
+        </div>
+        <div class="gif">
+          <iframe src="https://giphy.com/embed/KmTnUKop0AfFm" width="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+        <div class="message a">
+         2.another long day
+        </div>
+        <div class="message b">
+         3.another day when I don't know what to get for lunch
+        </div>
+        <div class="message a">
+         4.nothing is going well today
+        </div>
+        <div class="message b">
+         5.I want to go to bed right away so today will end faster
+        </div>
+
+        </div>
+    </span>
+
+    <span class="box1 ox"> SIS @ Oxford
+       <div class="list">
+         <div class="message a">
+          It’s FREEZING here.
+          <br>
+         </div>
+         <div class="message b">
+          Okay! Two lectures, same date, same time:
+          <br> George Friedman the one who wrote: The Next 100 Years: A Forecast for the 21st Century;
+          <br> V.S.
+          <br> new treatment for cancer cells.
+          <br> Which one should I go? I mean, I would’v gone to both but I can't.
+          <br> So hard to choose!!!
+         </div>
+         <div class="message a">
+           Remember that guy Ryan, my friend in New York? yeah, he's gay
+         </div>
+         <div class="message b">
+          Again, You're god! I'll talk to you later.
+         </div>
+     </div>
+    </span>
+
+   <span class="box1 tw">
+      Leon @ Taipei
+      <div class="list">
+       <div class="message a">
+        so I'm going to drive my sister's MINI Cooper and pick her up in a little while
+       </div>
+       <div class="message b">
+         this will be the first time I drive alone, hope everthing is going to be fine
+       </div>
+       <div class="message a">
+         I'm here, 30 minutes early, anyway I made it
+       </div>
+       <div class="message b">
+         <video id="car" controls width="80px;">
+     		  <source src="video-car.mp4" type="video/mp4">
+     		</video>
+       </div>
+
+     </div>
+   </span>
+   <span class="box1 tw2">
+      neil @ Taichung
+      <div class="list">
+      <div class="message a">
+      talking about you:
+      <a id="single_2" href="stillyou.jpg" title="still you">
+       <img src="stillyou.jpg" width="80px" alt="">
+      </a>
+      </div>
+     <div class="message b">
+      FYI your dad wants to speak to you
+     </div>
+     <div class="massage a">
+      I'm thinking about switching my job
+     </div>
+   </div>
+  </span>
+
+  <span class="box1 tw4">
+       Franco @ TW
+       <div class="list">
+         <div class="message a">
+         Hello <br> Hello<br>Hello
+         </div>
+         <div class="message b">
+           Anybody home?
+         </div>
+         <div class="message a">
+         why don't you anwer my texts?
+         </div>
+          <div class="message b">
+            missed call
+          </div>
+          <div class="message a">
+            missed call
+          </div>
+          <div class="message b">
+            missed call
+          </div>
+     </div>
+  </span>
+</div>
+
+<div id="nov3" >
+  <span class="box1 sf"> ME @ SF
+    <div class="list">
+
+      <div class="message a">
+       1.got too many stuff to do
+      </div>
+      <div class="message b">
+       2.I'm not sure how I feel about today
+      </div>
+      <div class="message a">
+       3.I insisted on cooking eventhough I don't have the time
+      </div>
+      <div class="message b">
+       3.the thing about cooking is:
+       <br> in my case, I spend an hour or an hour and a half cooking
+       <br> I finish my meal within 10 minutes
+       <br> than I spend anouther 30 to 40 minutes to clean up
+       <br> conclusion: cooking is very time cunsumming
+       <br>
+      </div>
+      <div class="message a">
+       4.okay, I will try to skype mom this week
+      </div>
+      <div class="message b">
+       5.I have burger today~
+      </div>
+      <div class="message a">
+       6.I want to see movie
+      </div>
+
+   </div>
+  </span>
+
+  <span class="box1 ox"> SIS @ Oxford
+    <div class="list">
+      <div class="message a">
+        CHECK THIS OUT!!!
+        <br>Caran d'Ache + Paul Smith this year again!!!
+        <br>I want this set soooooooooo bad!!
+        <br><a href="https://www.paulsmith.co.uk/uk-en/shop/caran-d-ache-paul-smith-artist-stripe-ballpoint-pen-collection-in-presentation-case.html">'Artist Stripe' Ballpoint Pen Collection In Presentation Case</a>
+        </div>
+        <div class="message b">
+        Andy got his snacks
+        <a class="fancybox-button" rel="fancybox-button" href="andy1.jpg"  >
+	         <img src="andy1.jpg" width="90px;"alt="" />
+        </a>
+        <a class="fancybox-button" rel="fancybox-button" href="andy2.jpg"  >
+	      <img src="andy2.jpg" width="90px;"alt="" />
+        </a>
+        <a class="fancybox-button" rel="fancybox-button" href="andy3.jpg" >
+	      <img src="andy3.jpg" width="90px;"alt="" />
+        </a>
+      </div>
+      </div>
+  </span>
+  <span class="box1 dubai">
+      Lucy @ Dubai
+      <div class="list">
+        <div class="message a">
+          Hi dear
+        <br> I need a scan of your passport for your visa
+        <br> can't wait to see you!!!
+
+    </div>
+    </div>
+   </span>
+  <span class="box1 tw">
+     Leon @ Taipei
+     <div class="list">
+      <div class="message a">
+       The coffee shop I was in today was playing all these songs
+     </div>
+     <div class= "message b">
+       <br> Guess which song is this
+      <audio id="player" controls>
+        <source src="songguessing.mp4" type="audio/mp4">
+      </audio>
+      </div>
+
+   </div>
+   </span>
+  <span class="box1 tw2">
+      Franco @ Taichung
+      <div class="list">
+        <div class="message a">
+          hello
+          <br>hello
+          <br>hello
+          <br>hello
+          <br>hello
+        </div>
+        <div class="message b">
+        I just emailed you a paper, can you translate for me please?
+      </div>
+    </div>
+
+  </span>
+</div>
+
+<div id="nov4" >
+  <span class="box1 sf"> ME @ SF
+    <div class="list">
+
+      <div class="message a">
+       1.getting a tripod
+      </div>
+      <div class="message b">
+       2.illustration studio 6hrs today- no more drawing until next week
+      </div>
+      <div class="message a">
+       3.running out of food
+      </div>
+      <div class="message b">
+       4. okay, I'm going to start exercising again
+      </div>
+      <div class="message a">
+       5.well, maybe I'll start next week lol
+      </div>
+      <div class="message b">
+       !!! the gril works in starbucks recognizes me
+      </div>
+      </div>
+    </span>
+    <span class="box1 tw">
+      Anita @ Taipei
+       <div class="list">
+        <div class="message a">
+         My laywer exam didn't go well
+        </div>
+        <div class="message b">
+          the results wont come out until two more months
+        </div>
+        <div class="message a">
+          I'm fine, I didn't start to take it seriously until this year, so I'd probably pass next spring
+        </div>
+        <div class="message b">
+          when are you coming back to visit?
+        </div>
+
+      </div>
+    </span>
+  <span class="box1 tw2">
+     Mel @ Taichung
+     <div class="list">
+     <div class="message a">
+       the food here is so good
+       <a class="fancybox-button" rel="fancybox-button" href="IMG_0702.JPG"  >
+          <img src="IMG_0702.JPG" width="90px;"alt="" />
+       </a>
+       <a class="fancybox-button" rel="fancybox-button" href="IMG_0703.JPG"  >
+       <img src="IMG_0703.JPG" width="90px;"alt="" />
+       </a>
+       <a class="fancybox-button" rel="fancybox-button" href="IMG_0704.JPG" >
+       <img src="IMG_0704.JPG" width="90px;"alt="" />
+       </a>
+     </div>
+
+  </div>
+  </span>
+
+</div>
+
+<div id="nov5" >
+  <span class="box1 sf"> ME @ SF
+     <div class="list">
+      <div class="message a">
+       1.Pancake failure, haven't make them since don't know when and now they look spereated and undercook
+      </div>
+      <div class="message b">
+       2.more footage needed for GD
+      </div>
+      <div class="message a">
+       3.it's hard to get the footages
+      </div>
+      <div class="message b">
+       4.filming is challenging
+      </div>
+      <div class="message a">
+       5. I think I'm getting better at this
+      </div>
+      <div class="message b">
+       6.it's taco night
+      </div>
+      </div>
+      </span>
+
+     <span class="box1 ox"> SIS @ Oxford
+         <div class="list">
+          <div class="message a">
+            Hello
+           </div>
+           <div class="message b">
+            It is so freaking cold
+            <br>I think I am going to turn into ice cube  
+            </div>
+        <div class="message a">
+            I got pretty sick but I feel a bit better
+        </div>
+        <div class="message b">
+          And then it gone downhill once more
+          <br>I am trying to get myself together
+          <br> By using hairdryer
+          <br>And wearing down coat
+          <br>To get my body temperature rise to normal
+          <br>As fast as possible
+        </div>
+        <div class="message a">
+          I was planning to listen a classical concert in a church
+          Tonight
+          <br>Now, it is better if I stay home and sleep
+         </div>
+         </div>
+        </span>
+
+       <span class="box1 dubai">
+        Lucy @ Dubai
+        <div class="list">
+          <div class="message a">
+            Hi dear
+          <br> What other places are you going besides Dubai?
+          <br> will you go back home?
+        </div>
+          <div class="message b">
+          <br> I might fly to San Francisco sometime next year
+        </div>
+        </div>
+       </span>
+       <span class="box1 nz">
+         Linda @ New Zeland
+         <div class="list">
+           <div class="message a">
+            How are you????????
+           <br> just want to let you know that I'll be in New Zeland for 6 months
+           <br> will you be traveling lately?
+         </div>
+           <div class="message b">
+           <br> I miss you
+           <br> let's skype sometime
+         </div>
+       </div>
+      </span>
+
+</div>
+
+<div id="nov6" >
+  <span class="box1 sf"> ME @ SF
+    <div class="list">
+
+      <div class="message a">
+       1.Sunday!!!
+      </div>
+      <div class="message b">
+       2.Sunday means time to work all day
+      </div>
+      <div class="gif">
+        <iframe src="http://giphy.com/embed/pFwRzOLfuGHok" width="100%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+      </div>
+      <div class="message a">
+       2.WHAT SHOULD I DO FOR BRIAN?!!!!
+      </div>
+    </div>
+     </span>
+
+   <span class="box1 tw">
+         Leon @ Taipei
+         <div class="list">
+          <div class="message a">
+            <audio id="player" controls>
+            <source src="0601.aac" type="audio/aac">
+          </audio>
+        </div>
+        <div class="message b">
+          <audio id="player" controls>
+          <source src="0602.aac" type="audio/aac">
+        </audio>
+      </div>
+      <div class="message a">
+        <audio id="player" controls>
+        <source src="0603.aac" type="audio/aac">
+      </audio>
+       </div>
+       <div class="message b">
+       <audio id="player" controls>
+       <source src="0604.aac" type="audio/aac">
+      </audio>
+      </div>
+
+    </div>
+   </span>
+
+   <span class="box1 tw2">
+       neil @ Taichung
+       <div class="list">
+         <div class="message a">
+
+           <br><a href="http://www.seeker.com/critters-yuck-it-up-in-comedy-wildlife-photo-contest-2080627305.html?utm_campaign=trueAnthem%3A+Trending+Content&utm_content=581e728304d3014466a04459&utm_medium=trueAnthem&utm_source=facebook">hahahahahaha</a>
+           </div>
+
+           <div class="message b">
+            <br><a href="https://twitter.com/ccchisa76">more</a>
+          </div>
+       </div>
+     </span>
+       <span class="box1 tw3">
+           Franco@ Taichung
+           <div class="list">
+           <a id="single_2" href="fran06.png" title="still you">
+            <img src="fran06.png" width="80px" alt="">
+           </a>
+           </div>
+
+     </div>
+   </span>
+
+</div>
+
+<div id="nov7" >
+  <span class="box1 sf"> ME @ SF
+    <div class="list">
+
+      <div class="message a">
+       1.Monday again
+      </div>
+      <div class="message b">
+       2.I forgot how I used to make my list
+      </div>
+      <div class="message a">
+       3.I'm running out of things that I want to say/ share
+      </div>
+      <div class="message b">
+       4.what would I do with this list of things- nothing
+      </div>
+      <div class="message a">
+       5.Why did I have this habbit of listing my day?
+      </div>
+      <div class="message b">
+       6.I need to go back to my first list of all the lists I wrote.
+      </div>
+    </div>
+  </span>
+
+    <span class="box1 ox"> SIS @ Oxford
+      <div class="list">
+        <div class="message a">
+          I am under antibiotic
+          I need to take for seven days
+          the worst news is school is taking another subfusc... (the formal wear) photo tomorrow
+          I wouldn't be able to stand a chance in the cold
+          with only shirts and skirts
+          even with socking
+          still not warm enough for my body to handle
+          I think i just not take the photo
+          my health is more improtant
+          any way i will keep you update
+          in the end i didn't go to the private doc
+          i got to the school doc intead
+          becuz the insurance still need to stay in hospital for a day in order to get the money
+          and it is not right away…..
+          and the private doc appointment fee is 180 pounds
+          not included examination nor the med
+          </div>
+          <div class="message b">
+           I will talk to you soon
+         </div>
+         </div>
+         </span>
+
+    <span class="box1 tw">
+       Leon @ Taipei
+       <div class="list">
+        <div class="message a">
+        <div class="gif">
+        I am working in this new movie and I'm not sure if you know her,
+        <br> but she's in here
+        <iframe src="14997164_1277006525682762_1915185783_n.gif" width="600%" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        </div>
+      </div>
+        <div class="message b">
+          A song relates to that movie
+        <audio id="player" controls>
+          <source src="09282016.mp4" type="audio/mp4">
+        </audio>
+      </div>
+
+     </div>
+     </span>
+
+
+
+     </span>
+
+
+</div>
+</body>
+</html>
